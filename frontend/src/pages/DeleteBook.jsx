@@ -13,7 +13,7 @@ const DeleteBook = () => {
 
   let handelClick = () => {
     console.log('delete');
-    axios.delete(`http://localhost:8000/books/${id}`)
+    axios.delete(`https://api-8bkb.onrender.com/books/${id}`)
       .then((res) => {
         console.log(res.data);
         navigate("/");

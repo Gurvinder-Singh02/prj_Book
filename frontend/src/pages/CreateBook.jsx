@@ -18,7 +18,7 @@ const CreateBook = () => {
   const handelSubmit = (evt) => {
     console.log(form);
     setLoading(true);
-    axios.post('http://localhost:8000/books', form)
+    axios.post('https://api-8bkb.onrender.com/books', form)
       .then((res) => {
         console.log(res.data);
         setLoading(false);
